@@ -1,0 +1,30 @@
+{
+  "type": "record",
+  "name": "Avro",
+  "fields": [
+    {
+      "name": "instance",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "Instance",
+          "fields": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "state",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "project",
+      "type": "string"
+    }
+  ]
+}
