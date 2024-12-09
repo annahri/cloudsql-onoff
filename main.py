@@ -62,7 +62,7 @@ def change_state(cloud_event):
         req_body['settings']['tier'] = sql_instance_params['settings']['tier']
 
         try:
-            req = sql_service.instances().update(
+            req = sql_service.instances().patch(
                 project = project,
                 instance = instance_name,
                 body = req_body
